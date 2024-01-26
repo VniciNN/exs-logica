@@ -37,11 +37,11 @@ def calcula_media():
     media_altura = sum(alturas) / len(alturas)
     return media_altura, media_peso
 
-def exibicao(media_altura, media_peso):
-    print(f'Cliente de maior altura: {maior_altura}')
-    print(f'Cliente de menor altura: {menor_altura}')
-    print(f'Cliente de maior peso: {maior_peso}')
-    print(f'Cliente de menor peso: {menor_peso}')
+def exibicao(media_altura, media_peso, codigo, altura, peso):
+    print(f'Cliente de maior altura: Código: {maior_altura.get(codigo)}, Altura: {maior_altura.get(altura)}, Peso: {maior_altura.get(peso)}')
+    print(f'Cliente de menor altura: Código: {menor_altura.get(codigo)}, Altura: {menor_altura.get(altura)}, Peso: {menor_altura.get(peso)}')
+    print(f'Cliente de maior peso:  Código: {maior_peso.get(codigo)}, Altura: {maior_peso.get(altura)}, Peso: {maior_peso.get(peso)}')
+    print(f'Cliente de menor peso:  Código: {menor_peso.get(codigo)}, Altura: {menor_peso.get(altura)}, Peso: {menor_peso.get(peso)}')
     print(f'Média altura: {media_altura}')
     print(f'Média peso: {media_peso}')
 
@@ -52,4 +52,4 @@ menor_altura = obtendo_info(menor_altura, 'altura')
 maior_peso = obtendo_info(maior_peso, 'peso')
 menor_peso = obtendo_info(menor_peso, 'peso')
 media = calcula_media()
-exibicao(media[0], media[1])
+exibicao(media[0], media[1], 'código', 'altura', 'peso')
