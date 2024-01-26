@@ -7,4 +7,3 @@ def validacao(dono, morador, carteira_ind, autorizacao_morador):
         return True
     else:
         return False
-

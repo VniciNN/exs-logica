@@ -15,4 +15,3 @@ while True:
     print(f'Total: {total}')
     print(f'Dinheiro: {dinheiro}')
     print(f'Troco: {troco}')
-

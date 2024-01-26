@@ -7,4 +7,3 @@ def demissao(exp_meses, vendas):
         return True
     else:
         return False
-
