@@ -7,4 +7,3 @@ for _ in range(10):
 for i in range(len(lista)):
     if lista[i] >= 10:
         print(lista[i])
-
